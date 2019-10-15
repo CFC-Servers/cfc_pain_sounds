@@ -92,14 +92,14 @@ hook.Remove( "EntityTakeDamage", "custom_sounds" )
 hook.Add( "EntityTakeDamage", "custom_sounds", function( vic, dmginfo )
     if not IsValid( vic ) then return end
     if not vic:IsPlayer() then return end
-    
+
     local mdl = vic:GetModel()
     local soundTable = HurtSounds[ mdl ]
-    
-    if soundTable == nil then 
+
+    if soundTable == nil then
         local sex = genderOfPlayerModel( mdl )
-        
-        if sex == "F" then 
+
+        if sex == "F" then
             soundTable = HurtSounds[ "cit_female" ]
         elseif sex == "M" then
             soundTable = HurtSounds[ "cit_male" ]
