@@ -109,7 +109,7 @@ hook.Add( "EntityTakeDamage", "custom_sounds", function( victim, dmginfo )
 
     if dmginfo:GetDamage() > 10 then
         local randSound = soundTable[ math.random( 1, table.Count( soundTable ) ) ]
-        --local duration = SoundDuration( randSound ) TODO: Convert all sounds to their .wav counterpart
+        --local duration = SoundDuration( randSound )
         victim:EmitSound( randSound )
     end
 end )
