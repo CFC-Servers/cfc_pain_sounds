@@ -1,7 +1,7 @@
 combineSounds =
-    "npc/metropolice/pain1.wav",
-    "npc/metropolice/pain2.wav",
-    "npc/metropolice/pain3.wav",
+    "npc/metropolice/pain1.wav"
+    "npc/metropolice/pain2.wav"
+    "npc/metropolice/pain3.wav"
     "npc/metropolice/pain4.wav"
 
 
@@ -71,11 +71,11 @@ combineSounds =
     }
 
     "models/player/eli.mdl": {
-        "*vo/outland_12a/launch/eli_launch_pain01.wav",
-        "*vo/outland_12a/launch/eli_launch_pain04.wav",
-        "*vo/outland_12a/launch/eli_launch_pain05.wav",
-        "*vo/outland_12a/launch/eli_launch_pain06.wav",
-        "*vo/outland_12a/launch/eli_launch_pain09.wav",
+        "*vo/outland_12a/launch/eli_launch_pain01.wav"
+        "*vo/outland_12a/launch/eli_launch_pain04.wav"
+        "*vo/outland_12a/launch/eli_launch_pain05.wav"
+        "*vo/outland_12a/launch/eli_launch_pain06.wav"
+        "*vo/outland_12a/launch/eli_launch_pain09.wav"
         "*vo/outland_12a/launch/eli_launch_pain13.wav"
     }
 
