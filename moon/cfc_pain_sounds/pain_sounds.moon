@@ -2,15 +2,13 @@ modelSounds = include "sounds.lua"
 
 import cit_male, cit_female from modelSounds
 import IsValid, rawget, rawset from _G
-import random from table
+import random from math
 import find from string
 
 modelCache = {}
-guessSounds = (mdl) -> cit_female if find mdl, "/female" else cit_male
 guessSounds = (mdl) -> find(mdl, "/female") and cit_female or cit_male
 randomSound = (sounds) -> rawget sounds, random #sounds
 
-sound = randomSound sounds
 level = 70
 pitch = 100
 volume = 1
@@ -26,4 +24,5 @@ hook.Add "PostEntityTakeDamage", "CFC_PainSounds", (victim, dmg, took) ->
     sounds = rawget(modelSounds, mdl) or rawget(modelCache, mdl) or guessSounds mdl
     rawset modelCache, mdl, sounds
 
-    victim\EmitSound sound, level, pithc, volume, channel
+    sound = randomSound sounds
+    victim\EmitSound sound, level, pitch, volume, channel
