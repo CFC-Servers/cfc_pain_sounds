@@ -1,8 +1,9 @@
-combineSounds =
+combineSounds = {
     "npc/metropolice/pain1.wav"
     "npc/metropolice/pain2.wav"
     "npc/metropolice/pain3.wav"
     "npc/metropolice/pain4.wav"
+}
 
 
 {
