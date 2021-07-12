@@ -19,11 +19,11 @@ hook.Add "PostEntityTakeDamage", "CFC_PainSounds", (victim, dmg, took) ->
 
     with rf = RecipientFilter!
         \AddPAS victim\GetPos!
-        \RemovePlayer p for p in *rf\GetPlayers! when enabled[p]
+        \RemovePlayer p for p in *rf\GetPlayers! when not enabled[p]
 
     net.Start "CFC_PainSounds_TookDamage"
     net.WriteEntity victim
     net.WriteUInt 7, damageAmount
-    net.Broadcast!
+    net.Send rf
 
     victim.lastPainSound = CurTime!
