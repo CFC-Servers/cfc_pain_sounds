@@ -1,8 +1,21 @@
-# [Deprecated] CFC Pain Sounds
+# CFC Pain Sounds
 OOF! 
 
 ## Overview
-A baseline system for giving hurt sounds to different player models. "Hurt sounds" being sounds a player makes when getting hurt. Currently only supports a handful of Half-Life player models which includes combine models. The model sounds are hard coded into a table so to modify any existing sounds or add any sounds you would have to match the format of the table.
+Uses a hard-coded list and some string parsing to choose a model-appropriate pain sound to play.
+
+Pain Sounds comes with a variety of options, including:
+ - Enable/Disable
+ - Quiet Mode (lower volume)
+ - Minimum damage to trigger sound
+ - Per-player cooldown between sounds
 
 ## Installation
-Clone or download this repository into your `garrysmod/addons` folder and then restart your server/game.
+Simply download a copy of the zip, or clone the repository straight into your addons folder! 
+
+Pre-compiled versions are available in **[Releases](https://github.com/CFC-Servers/cfc_pain_sounds/releases/)**
+
+The [`lua` branch](https://github.com/CFC-Servers/cfc_pain_sounds/tree/lua) is a lua-only branch containing the compiled code from the most recent release. One can use this to easily keep `cfc_pain_sounds` up to date.
+```sh
+git clone --single-branch --branch lua git@github.com:CFC-Servers/cfc_pain_sounds.git
+```
