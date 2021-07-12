@@ -48,8 +48,8 @@ net.Receive "CFC_PainSounds_TookDamage", ->
     rawset modelCache, mdl, sounds
 
     sound = randomSound sounds
-    level = quiet! and 60 or 75
-    volume = quiet! and 0.6 or 1
+    level = quiet! and 45 or 75
+    volume = quiet! and 0.4 or 1
     pitch = random 90, 110
 
     victim\EmitSound sound, level, pitch, volume, channel
