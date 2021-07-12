@@ -1,6 +1,7 @@
 import Recipientfilter, IsValid, CurTime from _G
 COOLDOWN = 0.1
 
+unreliable = true
 checkIsEnabled = (ply) -> ply\GetInfoNum("cfc_painsounds_enabled", 1) == 1
 
 enabled = {}
@@ -21,7 +22,7 @@ hook.Add "PostEntityTakeDamage", "CFC_PainSounds", (victim, dmg, took) ->
         \AddPAS victim\GetPos!
         \RemovePlayer p for p in *rf\GetPlayers! when not enabled[p]
 
-    net.Start "CFC_PainSounds_TookDamage"
+    net.Start "CFC_PainSounds_TookDamage", unreliable
     net.WriteEntity victim
     net.WriteUInt 7, damageAmount
     net.Send rf
