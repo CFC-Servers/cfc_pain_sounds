@@ -1,7 +1,7 @@
 CreateClientConVar "cfc_painsounds_enabled", 1, true, true, "Are CFC PainSounds enabled", 0, 1
 CreateClientConVar "cfc_painsounds_quiet", 0, true, false, "Should the pain sounds be quieter?", 0, 1
 CreateClientConVar "cfc_painsounds_min_dmg", 25, true, false, "How much damage do players have to take before making a sound?", 1, 100
-CreateClientConVar "cfc_painsounds_cooldown", 0.1, true, false, "How often can a player make sounds?", 0, 2
+CreateClientConVar "cfc_painsounds_cooldown", 1, true, false, "How often can a player make sounds?", 0, 2
 
 populatePanel = (panel) ->
     with panel
