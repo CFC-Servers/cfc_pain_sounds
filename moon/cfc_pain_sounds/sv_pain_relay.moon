@@ -18,7 +18,9 @@ hook.Add "PostEntityTakeDamage", "CFC_PainSounds", (victim, dmg, took) ->
     damageAmount = dmg\GetDamage!
     return unless damageAmount >= 1
 
-    rf = with RecipientFilter!
+    rf = RecipientFilter!
+
+    with rf
         \AddPAS victim\GetPos!
         \RemovePlayer p for p in *rf\GetPlayers! when not enabled[p]
 
