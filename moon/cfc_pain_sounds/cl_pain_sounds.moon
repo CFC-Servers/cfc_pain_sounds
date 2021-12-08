@@ -38,6 +38,7 @@ net.Receive "CFC_PainSounds_TookDamage", ->
     return unless enabled!
 
     victim = net.ReadEntity!
+    return unless IsValid victim
     return if (victim.lastPainSound or 0) > RealTime! - cooldown!
 
     dmg = net.ReadUInt 7
