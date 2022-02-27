@@ -16,7 +16,7 @@ hook.Add "PostEntityTakeDamage", "CFC_PainSounds", (victim, dmg, took) ->
     return unless victim\IsPlayer!
     return unless (victim.lastPainSound or 0) < CurTime! - COOLDOWN
 
-    damageAmount = dmg\GetDamage!
+    damageAmount = min dmg\GetDamage!, 1000
     return unless damageAmount >= 1
 
     rf = with RecipientFilter!
@@ -25,7 +25,7 @@ hook.Add "PostEntityTakeDamage", "CFC_PainSounds", (victim, dmg, took) ->
 
     net.Start "CFC_PainSounds_TookDamage", unreliable
     net.WriteEntity victim
-    net.WriteUInt 7, min 1000, damageAmount
+    net.WriteUInt 7, damageAmount
     net.Send rf
 
     victim.lastPainSound = CurTime!
