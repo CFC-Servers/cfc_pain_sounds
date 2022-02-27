@@ -1,5 +1,5 @@
 import Recipientfilter, IsValid, CurTime from _G
-math_min = math.min
+import min from math
 COOLDOWN = 0.1
 
 unreliable = true
@@ -25,7 +25,7 @@ hook.Add "PostEntityTakeDamage", "CFC_PainSounds", (victim, dmg, took) ->
 
     net.Start "CFC_PainSounds_TookDamage", unreliable
     net.WriteEntity victim
-    net.WriteUInt 7, math_min 1000, damageAmount -- Avoids net overflow when dmg is incredibly high
+    net.WriteUInt 7, min 1000, damageAmount
     net.Send rf
 
     victim.lastPainSound = CurTime!
