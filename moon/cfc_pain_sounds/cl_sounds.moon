@@ -24,32 +24,27 @@ zombieSounds = {
 
 {
     cit_male: {
-        "vo/episode_1/npc/male01/cit_pain01.wav"
-        "vo/episode_1/npc/male01/cit_pain02.wav"
-        "vo/episode_1/npc/male01/cit_pain03.wav"
-        "vo/episode_1/npc/male01/cit_pain04.wav"
-        "vo/episode_1/npc/male01/cit_pain05.wav"
-        "vo/episode_1/npc/male01/cit_pain06.wav"
-        "vo/episode_1/npc/male01/cit_pain07.wav"
-        "vo/episode_1/npc/male01/cit_pain08.wav"
-        "vo/episode_1/npc/male01/cit_pain09.wav"
-        "vo/episode_1/npc/male01/cit_pain10.wav"
-        "vo/episode_1/npc/male01/cit_pain11.wav"
-        "vo/episode_1/npc/male01/cit_pain12.wav"
-        "vo/episode_1/npc/male01/cit_pain13.wav"
+        "vo/npc/male01/pain01.wav",
+        "vo/npc/male01/pain02.wav",
+        "vo/npc/male01/pain03.wav",
+        "vo/npc/male01/pain04.wav",
+        "vo/npc/male01/pain05.wav",
+        "vo/npc/male01/pain06.wav",
+        "vo/npc/male01/pain07.wav",
+        "vo/npc/male01/pain08.wav",
+        "vo/npc/male01/pain09.wav",
     }
 
     cit_female: {
-        "vo/episode_1/npc/female01/cit_pain01.wav"
-        "vo/episode_1/npc/female01/cit_pain02.wav"
-        "vo/episode_1/npc/female01/cit_pain03.wav"
-        "vo/episode_1/npc/female01/cit_pain04.wav"
-        "vo/episode_1/npc/female01/cit_pain05.wav"
-        "vo/episode_1/npc/female01/cit_pain06.wav"
-        "vo/episode_1/npc/female01/cit_pain07.wav"
-        "vo/episode_1/npc/female01/cit_pain08.wav"
-        "vo/episode_1/npc/female01/cit_pain09.wav"
-        "vo/episode_1/npc/female01/cit_pain10.wav"
+        "vo/npc/female01/pain01.wav",
+        "vo/npc/female01/pain02.wav",
+        "vo/npc/female01/pain03.wav",
+        "vo/npc/female01/pain04.wav",
+        "vo/npc/female01/pain05.wav",
+        "vo/npc/female01/pain06.wav",
+        "vo/npc/female01/pain07.wav",
+        "vo/npc/female01/pain08.wav",
+        "vo/npc/female01/pain09.wav",
     }
 
     "models/player/alyx.mdl": {
